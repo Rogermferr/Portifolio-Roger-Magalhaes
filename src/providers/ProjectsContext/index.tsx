@@ -17,9 +17,9 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
   useEffect(() => {
     const getProjects = async () => {
       try {
-        const response = await api.get("Rogermferr/repos", {
+        const response = await api.get("/Rogermferr/repos", {
           headers: {
-            Authorization: "Bearer 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",
+            Authorization: "Bearer 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",
           },
         });
 
