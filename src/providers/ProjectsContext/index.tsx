@@ -17,11 +17,9 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
   useEffect(() => {
     const getProjects = async () => {
       try {
-        const response = await api.get("/Rogermferr/repos", {
-          headers: {
-            Authorization: "Bearer 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",
-          },
-        });
+        const response = await api.get(
+          "/Rogermferr/repos?sort=created&direction=desc"
+        );
 
         const listProjects = response.data;
 
