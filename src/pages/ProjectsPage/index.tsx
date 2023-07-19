@@ -1,18 +1,17 @@
-import { useContext } from 'react';
-import ListProjects from '../../components/ListProjects';
-import { ProjectsPageStyle } from './style';
-import { ProjectsContext } from '../../providers/ProjectsContext';
-import ProjectModal from '../../components/ProjectModal';
-import { motion } from 'framer-motion';
+import { useContext } from "react";
+import ListProjects from "../../components/ListProjects";
+import { ProjectsPageStyle } from "./style";
+import { ProjectsContext } from "../../providers/ProjectsContext";
+import ProjectModal from "../../components/ProjectModal";
+import { motion } from "framer-motion";
 
 const ProjectsPage = () => {
   const { projectModalOpen } = useContext(ProjectsContext);
 
   return (
     <motion.div
-      initial={{ x: 1000, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: window.innerWidth }}
+      initial={{ y: 1000, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}>
       <ProjectsPageStyle>
         <ListProjects />

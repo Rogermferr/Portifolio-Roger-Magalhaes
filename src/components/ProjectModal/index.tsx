@@ -7,6 +7,7 @@ import { AiOutlineDeploymentUnit } from "react-icons/ai";
 import { motion } from "framer-motion";
 import useOutClick from "../../hooks/useOutClick";
 import useKeyDown from "../../hooks/useKeyDown";
+import { AiOutlineClose } from "react-icons/ai";
 
 const ProjectModal = () => {
   const { projectFound, setProjectModalOpen } = useContext(ProjectsContext);
@@ -30,7 +31,7 @@ const ProjectModal = () => {
         <header>
           <h2>{projectFound.name}</h2>
           <button onClick={() => setProjectModalOpen(false)} ref={buttonRef}>
-            X
+            <AiOutlineClose />
           </button>
         </header>
         <section>

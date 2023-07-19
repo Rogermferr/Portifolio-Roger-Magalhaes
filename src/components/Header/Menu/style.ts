@@ -58,7 +58,7 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
 
     position: fixed;
     top: 64px;
-    right: 0px;
+    right: -30px;
 
     background: var(--color-black);
     background: -webkit-linear-gradient(
@@ -78,6 +78,6 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
 
     transform: ${(props) =>
       props.isActive ? "translateY(0)" : "translateY(-1000px)"};
-    transition: ease-in-out 1s;
+    transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) 1s;
   }
 `;

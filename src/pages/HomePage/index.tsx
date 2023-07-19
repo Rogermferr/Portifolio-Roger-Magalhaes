@@ -1,15 +1,14 @@
-import ListStacks from '../../components/ListStacks';
-import Presentetion from '../../components/Presentation';
-import ProfileImage from '../../components/ProfileImage';
-import { HomePageStyle } from './style';
-import { motion } from 'framer-motion';
+import ListStacks from "../../components/ListStacks";
+import Presentetion from "../../components/Presentation";
+import ProfileImage from "../../components/ProfileImage";
+import { HomePageStyle } from "./style";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
     <motion.div
-      initial={{ x: -1000, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: window.innerWidth }}
+      initial={{ y: 1000, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}>
       <HomePageStyle>
         <section>
