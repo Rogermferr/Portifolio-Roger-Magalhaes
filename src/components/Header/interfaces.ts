@@ -5,4 +5,9 @@ export interface HeaderStyleProps {
 
 export interface MenuProps {
   isActive: boolean;
+  menuRef: React.MutableRefObject<any>;
+}
+
+export interface HeaderMenuBackgroundProps {
+  isActive: boolean;
 }

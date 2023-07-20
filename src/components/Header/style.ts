@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MenuProps } from "./interfaces";
+import { HeaderMenuBackgroundProps } from "./interfaces";
 
 export const HeaderStyle = styled.header`
   display: flex;
@@ -48,7 +48,7 @@ export const HeaderStyle = styled.header`
   }
 `;
 
-export const HeaderMenuBackground = styled.div<MenuProps>`
+export const HeaderMenuBackground = styled.div<HeaderMenuBackgroundProps>`
   width: 100vw;
   height: 100vh;
 
