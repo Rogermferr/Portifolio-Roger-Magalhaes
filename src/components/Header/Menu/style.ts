@@ -57,8 +57,9 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
     align-items: center;
 
     position: fixed;
-    top: 64px;
+    top: 85px;
     right: -30px;
+    z-index: 100;
 
     background: var(--color-black);
     background: -webkit-linear-gradient(
@@ -73,11 +74,11 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
     );
 
     padding: 16px;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-right: 32px;
 
     transform: ${(props) =>
-      props.isActive ? "translateY(0)" : "translateY(-1000px)"};
+      props.isActive ? "translateX(0)" : "translateX(140px)"};
     transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) 1s;
   }
 `;

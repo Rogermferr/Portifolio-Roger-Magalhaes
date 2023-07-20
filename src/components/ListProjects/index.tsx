@@ -1,7 +1,7 @@
-import { useContext } from 'react';
-import { ProjectsContext } from '../../providers/ProjectsContext';
-import CardProjects from './CardProjects';
-import { ListProjectsStyle } from './style';
+import { useContext } from "react";
+import { ProjectsContext } from "../../providers/ProjectsContext";
+import CardProjects from "./CardProjects";
+import { ListProjectsStyle } from "./style";
 
 const ListProjects = () => {
   const { projects } = useContext(ProjectsContext);

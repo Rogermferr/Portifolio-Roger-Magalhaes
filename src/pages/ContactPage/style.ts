@@ -7,12 +7,12 @@ export const ContactPageStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 64px;
 
   @media (max-width: 900px) {
     flex-wrap: wrap;
     justify-content: center;
 
-    margin: 150px 16px 200px 16px;
+    margin: 150px 16px;
   }
 `;

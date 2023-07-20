@@ -19,8 +19,8 @@ export const FooterStyle = styled.footer`
 
   color: var(--color-white);
 
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
 
   div {
     display: flex;

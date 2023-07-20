@@ -1,5 +1,5 @@
 import Menu from "./Menu";
-import { HeaderStyle } from "./style";
+import { HeaderMenuBackground, HeaderStyle } from "./style";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
@@ -15,6 +15,7 @@ const Header = () => {
       </span>
 
       <Menu isActive={isActive} />
+      <HeaderMenuBackground isActive={isActive} />
     </HeaderStyle>
   );
 };

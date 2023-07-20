@@ -8,7 +8,7 @@ const Menu = ({ isActive }: MenuProps) => {
   return (
     <MenuStyle pathname={pathname} isActive={isActive}>
       <Link to={"/"} className="home_link">
-        Home
+        Início
       </Link>
 
       <Link to={"/contact"} className="contact_link">

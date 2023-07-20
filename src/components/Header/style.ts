@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MenuProps } from "./interfaces";
 
 export const HeaderStyle = styled.header`
   display: flex;
@@ -45,4 +46,17 @@ export const HeaderStyle = styled.header`
       cursor: pointer;
     }
   }
+`;
+
+export const HeaderMenuBackground = styled.div<MenuProps>`
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #0009;
+
+  position: fixed;
+  top: 85px;
+  left: 0;
+
+  display: ${(props) => (props.isActive ? "block" : "none")};
 `;

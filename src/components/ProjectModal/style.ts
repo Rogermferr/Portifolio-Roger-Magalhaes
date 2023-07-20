@@ -14,7 +14,7 @@ export const ProjectModalStyle = styled.div`
   width: 100vw;
   height: 100vh;
 
-  background-color: #0005;
+  background-color: #0009;
 
   div {
     width: 50vw;
@@ -40,6 +40,7 @@ export const ProjectModalStyle = styled.div`
       position: relative;
       box-shadow: 0 2px 0 0 var(--color-gray-two);
       padding-bottom: 16px;
+      margin-bottom: 16px;
 
       h2 {
         color: var(--color-white);

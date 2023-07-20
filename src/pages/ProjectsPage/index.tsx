@@ -10,8 +10,8 @@ const ProjectsPage = () => {
 
   return (
     <motion.div
-      initial={{ y: 1000, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 1 }}>
       <ProjectsPageStyle>
         <ListProjects />
