@@ -51,13 +51,18 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
         props.pathname === "/projects" ? "solid 2px var(--color-red)" : "none"};
     }
   }
+  button {
+    color: var(--color-white);
+    background: transparent;
+    border: none;
+  }
 
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
 
     position: fixed;
-    top: 85px;
+    top: 83px;
     right: -30px;
     z-index: 100;
 

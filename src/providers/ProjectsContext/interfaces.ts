@@ -13,6 +13,8 @@ export interface IProjectsContext {
   projectFound: IProject;
   projectModalOpen: boolean;
   setProjectModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  switchTheme: () => void;
+  switchedTheme: string | null;
 }
 
 export interface IProjectsProviderProps {

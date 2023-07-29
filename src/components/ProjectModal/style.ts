@@ -18,7 +18,6 @@ export const ProjectModalStyle = styled.div`
 
   div {
     width: 50vw;
-    height: 30vh;
     background: var(--color-black);
     background: -webkit-linear-gradient(
       to right,
@@ -71,11 +70,16 @@ export const ProjectModalStyle = styled.div`
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      gap: 16px;
       height: 80%;
+      color: var(--color-white);
 
       p {
-        color: var(--color-white);
         margin-top: 16px;
+      }
+
+      span {
+        font-weight: bold;
       }
 
       .links_container {
@@ -104,7 +108,6 @@ export const ProjectModalStyle = styled.div`
   @media (max-width: 900px) {
     div:nth-child(1) {
       width: 90%;
-      height: 40%;
     }
   }
 `;

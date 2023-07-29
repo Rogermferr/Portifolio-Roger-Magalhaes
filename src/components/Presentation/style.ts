@@ -7,6 +7,46 @@ export const PresentationStyle = styled.div`
 
   h2 {
     font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h2:nth-child(2) {
+    color: var(--color-red);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+
+    animation: typing 4s steps(50, end) 1s infinite;
+  }
+
+  h2:nth-child(2)::after {
+    content: "|";
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.5s step-end infinite;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
   }
 
   h1 {
@@ -33,13 +73,15 @@ export const PresentationStyle = styled.div`
     }
 
     a:nth-child(1) {
+      color: #f5f5f5;
       padding: 16px;
       background-color: var(--color-red);
       border-radius: 20px;
       font-weight: bold;
     }
 
-    a:nth-child(2) {
+    a:nth-child(2),
+    a:nth-child(3) {
       padding: 16px;
       border: solid 1px var(--color-white);
       border-radius: 20px;

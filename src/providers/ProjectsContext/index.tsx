@@ -13,6 +13,9 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
 
   const [projects, setProjects] = useState([] as IProject[]);
+  const [switchedTheme, setSwitchedTheme] = useState<string | null>(
+    localStorage.getItem("@PORTFOLIO: THEME")
+  );
 
   useEffect(() => {
     const getProjects = async () => {
@@ -39,6 +42,16 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
     setProjectModalOpen(true);
   };
 
+  const switchTheme = () => {
+    if (!switchedTheme || switchedTheme === "dark") {
+      setSwitchedTheme("light");
+      localStorage.setItem("@PORTFOLIO: THEME", "light");
+    } else if (switchedTheme === "light") {
+      localStorage.setItem("@PORTFOLIO: THEME", "dark");
+      setSwitchedTheme("dark");
+    }
+  };
+
   return (
     <ProjectsContext.Provider
       value={{
@@ -47,6 +60,8 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
         projectFound,
         projectModalOpen,
         setProjectModalOpen,
+        switchTheme,
+        switchedTheme,
       }}>
       {children}
     </ProjectsContext.Provider>

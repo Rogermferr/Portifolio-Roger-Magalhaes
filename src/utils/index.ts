@@ -1,4 +1,9 @@
-import { SiPostgresql, SiTypescript } from "react-icons/si";
+import {
+  SiPostgresql,
+  SiTypescript,
+  SiExpress,
+  SiStyledcomponents,
+} from "react-icons/si";
 import { FaGit, FaPython } from "react-icons/fa";
 import { TbBrandDjango } from "react-icons/tb";
 import { FaHtml5, FaCss3Alt, FaJs, FaNode, FaReact } from "react-icons/fa";
@@ -44,5 +49,13 @@ export const stackData = [
   {
     title: "Django",
     img: TbBrandDjango,
+  },
+  {
+    title: "Express",
+    img: SiExpress,
+  },
+  {
+    title: "Styled-components",
+    img: SiStyledcomponents,
   },
 ];

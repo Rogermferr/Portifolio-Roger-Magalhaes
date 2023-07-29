@@ -10,11 +10,13 @@ export const StackCardStyle = styled.li`
   p {
     opacity: 0;
     transition: all 0.5s;
-    color: var(--color-white);
+    color: #f5f5f5;
     transform: scale(0);
     background-color: var(--color-red);
     padding: 5px;
     border-radius: 8px;
+
+    text-align: center;
 
     position: absolute;
     bottom: -40px;

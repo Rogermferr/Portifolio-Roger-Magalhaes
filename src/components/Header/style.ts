@@ -49,14 +49,18 @@ export const HeaderStyle = styled.header`
 `;
 
 export const HeaderMenuBackground = styled.div<HeaderMenuBackgroundProps>`
-  width: 100vw;
-  height: 100vh;
+  display: none;
 
-  background-color: #0009;
+  @media (max-width: 900px) {
+    width: 100vw;
+    height: 100vh;
 
-  position: fixed;
-  top: 85px;
-  left: 0;
+    background-color: #0009;
 
-  display: ${(props) => (props.isActive ? "block" : "none")};
+    position: fixed;
+    top: 80px;
+    left: 0;
+
+    display: ${(props) => (props.isActive ? "block" : "none")};
+  }
 `;

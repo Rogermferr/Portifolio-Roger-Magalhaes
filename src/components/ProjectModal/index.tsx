@@ -36,6 +36,9 @@ const ProjectModal = () => {
         </header>
         <section>
           <p>{projectFound.description}</p>
+          {projectFound.language && (
+            <span>Principal linguagem: {projectFound.language}</span>
+          )}
           <div className="links_container">
             <Link to={projectFound.html_url} target="_blank">
               Github
@@ -43,7 +46,7 @@ const ProjectModal = () => {
             </Link>
             {projectFound.homepage && (
               <Link to={projectFound.homepage} target="_blank">
-                Deploy
+                Demo
                 <AiOutlineDeploymentUnit />
               </Link>
             )}

@@ -1,11 +1,19 @@
+import { useContext } from "react";
 import Routers from "./routes";
 import { GlobalReset } from "./styles/reset";
-import { GlobalTypography } from "./styles/typography";
+import { GlobalDarkStyle, GlobalLightStyle } from "./styles/typography";
+import { ProjectsContext } from "./providers/ProjectsContext";
 
 function App() {
+  const { switchedTheme } = useContext(ProjectsContext);
+
   return (
     <>
-      <GlobalTypography />
+      {switchedTheme === "dark" || !switchedTheme ? (
+        <GlobalDarkStyle />
+      ) : (
+        <GlobalLightStyle />
+      )}
       <GlobalReset />
       <Routers />
     </>
