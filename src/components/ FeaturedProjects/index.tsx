@@ -1,4 +1,3 @@
-import { featuredProjectsData } from "../../utils/featuredProjects";
 import Card from "./Card";
 import { FeaturedProjectsStyle, SwiperPagination } from "./style";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { featuredProjectsData } from "../../utils";
 
 const FeaturedProjects = () => {
   return (
