@@ -19,12 +19,9 @@ export const FooterStyle = styled.footer`
 
   color: var(--color-white);
 
-  /* position: fixed;
-  bottom: 0; */
-
   div {
     display: flex;
-    margin: 0 150px;
+    margin: 0 50px;
 
     p {
       font-size: 1rem;

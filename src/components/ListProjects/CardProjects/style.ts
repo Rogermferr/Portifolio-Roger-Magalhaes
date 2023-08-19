@@ -20,7 +20,7 @@ export const CardProjectsStyle = styled.li`
     cursor: pointer;
   }
 
-  h2 {
+  h3 {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -30,7 +30,7 @@ export const CardProjectsStyle = styled.li`
       transform: none;
     }
 
-    h2 {
+    h3 {
       width: 200px;
     }
   }

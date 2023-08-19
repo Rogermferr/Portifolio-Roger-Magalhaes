@@ -90,4 +90,10 @@ export const GlobalReset = createGlobalStyle`
     a{
         text-decoration: none;
     }
+
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 `;

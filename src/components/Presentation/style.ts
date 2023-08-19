@@ -21,7 +21,7 @@ export const PresentationStyle = styled.div`
   }
 
   h2:nth-child(2)::after {
-    content: "|";
+    content: "_";
     display: inline-block;
     width: 10px;
     animation: blink 0.5s step-end infinite;
@@ -66,6 +66,7 @@ export const PresentationStyle = styled.div`
     a {
       color: var(--color-white);
       transition: all 0.5s;
+      text-align: center;
     }
 
     a:hover {

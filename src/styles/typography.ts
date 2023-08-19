@@ -7,6 +7,9 @@ export const GlobalDarkStyle = createGlobalStyle`
         --color-black: #000;
         --color-gray: #333333;
         --color-gray-two: #868E96;
+        --color-transparent: #0009;
+        --swiper-navigation-color: var(--color-red);
+        --swiper-pagination-color: var(--color-red);
     }
 `;
 
@@ -17,5 +20,8 @@ export const GlobalLightStyle = createGlobalStyle`
         --color-black: #F5F5F5;
         --color-gray: #868E96;
         --color-gray-two: #333333;
+        --color-transparent: #fff9;
+        --swiper-navigation-color: var(--color-red);
+        --swiper-pagination-color: var(--color-red);
     }
 `;

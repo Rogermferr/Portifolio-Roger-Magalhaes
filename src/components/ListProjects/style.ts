@@ -5,12 +5,12 @@ export const ListProjectsStyle = styled.ul`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
 
-  margin: 150px;
+  margin: 50px;
 
   @media (max-width: 900px) {
     display: flex;
     width: 100%;
     overflow-x: auto;
-    margin: 30vh 16px;
+    margin: 50px 16px;
   }
 `;

@@ -17,7 +17,7 @@ export const ProjectModalStyle = styled.div`
   background-color: #0009;
 
   div {
-    width: 50vw;
+    max-width: 500px;
     background: var(--color-black);
     background: -webkit-linear-gradient(
       to right,

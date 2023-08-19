@@ -1,7 +1,11 @@
-import Image from "../../assets/IMG_20230526_141205.jpg";
 import { ProfileImageStyle } from "./style";
 const ProfileImage = () => {
-  return <ProfileImageStyle src={Image} alt="Imagem de Perfil" />;
+  return (
+    <ProfileImageStyle
+      src="https://avatars.githubusercontent.com/u/104469936?v=4"
+      alt="Imagem de Perfil"
+    />
+  );
 };
 
 export default ProfileImage;

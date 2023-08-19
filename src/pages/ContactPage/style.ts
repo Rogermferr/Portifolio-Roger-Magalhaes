@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactPageStyle = styled.div`
   color: var(--color-white);
-  margin: 150px;
+  margin: 200px 0px;
 
   display: flex;
   justify-content: space-between;

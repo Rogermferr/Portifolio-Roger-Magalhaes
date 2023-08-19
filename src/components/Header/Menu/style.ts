@@ -4,7 +4,7 @@ import { HeaderStyleProps } from "./../interfaces";
 export const MenuStyle = styled.nav<HeaderStyleProps>`
   display: flex;
   gap: 16px;
-  margin-right: 150px;
+  margin-right: 50px;
 
   span {
     opacity: 0;
@@ -21,7 +21,6 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
 
     padding: 8px;
     width: 100%;
-    transition: all 1s;
 
     &.home_link {
       color: ${(props) =>
@@ -61,10 +60,12 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
     flex-direction: column;
     align-items: center;
 
+    width: 100%;
+    padding: 16px 0;
+
     position: fixed;
-    top: 83px;
-    right: -30px;
-    z-index: 100;
+    top: 70px;
+    z-index: 1;
 
     background: var(--color-black);
     background: -webkit-linear-gradient(
@@ -78,12 +79,14 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
       var(--color-gray)
     );
 
-    padding: 16px;
     border-radius: 8px;
-    margin-right: 32px;
 
-    transform: ${(props) =>
-      props.isActive ? "translateX(0)" : "translateX(140px)"};
-    transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) 1s;
+    transform: scaleY(${(props) => (props.isActive ? "1" : "0")});
+    transform-origin: top;
+    transition: transform 0.5s cubic-bezier(0.64, 0.02, 0.41, 1.25);
+
+    a {
+      max-width: 50%;
+    }
   }
 `;

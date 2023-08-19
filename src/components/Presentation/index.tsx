@@ -6,7 +6,7 @@ const Presentetion = () => {
   return (
     <PresentationStyle>
       <h2>Olá, meu nome é Roger Magalhães</h2>
-      <h2>Dev Full Stack</h2>
+      <h2>{">"}Dev Full Stack</h2>
       <h1>Eu amo desenvolver projetos e resolver problemas</h1>
       <p>
         Este ambiente foi desenvolvido para demonstrar a você, todos os meus

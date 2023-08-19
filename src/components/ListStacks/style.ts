@@ -6,4 +6,8 @@ export const ListStacksStyle = styled.ul`
   gap: 50px;
 
   margin: 50px 0;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;

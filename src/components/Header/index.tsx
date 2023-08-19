@@ -16,7 +16,7 @@ const Header = () => {
     <HeaderStyle>
       <h1>Roger Magalhães</h1>
       <span onClick={() => setIsActive(!isActive)}>
-        {isActive ? <AiOutlineClose size={30} /> : <FaBars size={25} />}
+        {isActive ? <AiOutlineClose size={25} /> : <FaBars size={25} />}
       </span>
 
       <Menu isActive={isActive} menuRef={menuRef} />
