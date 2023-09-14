@@ -45,8 +45,8 @@ export const GlobalReset = createGlobalStyle`
     }
 
     ::-webkit-scrollbar{
-        width: 2px;
-        height: 0;
+        width: 5px;
+        height: 5px;
     }
 
     ::-webkit-scrollbar-track{

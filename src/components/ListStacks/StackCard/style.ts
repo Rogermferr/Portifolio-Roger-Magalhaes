@@ -7,6 +7,8 @@ export const StackCardStyle = styled.li`
   color: var(--color-gray-two);
   position: relative;
 
+  padding: 16px;
+
   p {
     opacity: 0;
     transition: all 0.5s;
@@ -19,7 +21,7 @@ export const StackCardStyle = styled.li`
     text-align: center;
 
     position: absolute;
-    bottom: -40px;
+    bottom: -30px;
     z-index: 1;
   }
 

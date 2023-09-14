@@ -8,6 +8,10 @@ export const ListStacksStyle = styled.ul`
   margin: 50px 0;
 
   @media (max-width: 769px) {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+
+    padding: 32px 0;
   }
 `;

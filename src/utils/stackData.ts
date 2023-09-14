@@ -83,7 +83,7 @@ export const stackData = [
     img: SiAxios,
   },
   {
-    title: "React Hook Form",
+    title: "Hook Form",
     img: SiReacthookform,
   },
   {

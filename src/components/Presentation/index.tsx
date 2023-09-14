@@ -12,9 +12,9 @@ const Presentetion = () => {
         Este ambiente foi desenvolvido para demonstrar a você, todos os meus
         projetos e tecnologias.
         <br />
-        Sou estudante de programação na Kenzie Academy Brasil, participei de
-        diversos projetos resolvendo problemas de alto nível e desenvolvendo
-        habilidades
+        Sou formado em Tecnólogo de ADS e em Desenvolvimento Web Full Stack pela
+        Kenzie Academy Brasil, participei de diversos projetos resolvendo
+        problemas de alto nível e desenvolvendo habilidades.
       </p>
       <div>
         <Link to={"/projects"}>Ver projetos</Link>

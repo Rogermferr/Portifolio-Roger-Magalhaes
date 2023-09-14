@@ -64,4 +64,20 @@ export const featuredProjectsData: IFeaturedProject[] = [
     description:
       "Api que permite o crud de usuário, adição de albuns e suas músicas.",
   },
+  {
+    title: "Kenzie Motors",
+    demo: "https://kenzie-motors-chi.vercel.app/",
+    repository: "https://github.com/Rogermferr/Front-End-Motors",
+    image: "https://live.staticflickr.com/65535/53180966542_728f34cfc5_k.jpg",
+    description:
+      "Esta aplicação oferece uma plataforma dinâmica e interativa para conectar anunciantes e compradores, permitindo que os anunciantes criem anúncios de carros emocionantes e os compradores explorem uma ampla variedade de opções.",
+  },
+  {
+    title: "Kenzie Motors API",
+    demo: "https://kenzie-motors-chi.vercel.app/",
+    repository: "https://github.com/Rogermferr/Back-End-Motors",
+    image: "https://live.staticflickr.com/65535/53180966542_728f34cfc5_k.jpg",
+    description:
+      "Esta API oferece uma plataforma dinâmica e interativa para conectar anunciantes e compradores, permitindo que os anunciantes criem anúncios de carros emocionantes e os compradores explorem uma ampla variedade de opções.",
+  },
 ];
