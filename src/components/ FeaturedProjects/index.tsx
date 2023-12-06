@@ -6,7 +6,6 @@ import {
   Pagination,
   Scrollbar,
   A11y,
-  Autoplay,
   EffectCoverflow,
 } from "swiper/modules";
 import "swiper/css";
@@ -20,21 +19,13 @@ const FeaturedProjects = () => {
     <FeaturedProjectsStyle>
       <h2>Projetos em destaque</h2>
       <Swiper
-        modules={[
-          Navigation,
-          Pagination,
-          Scrollbar,
-          A11y,
-          Autoplay,
-          EffectCoverflow,
-        ]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
         loop={true}
         spaceBetween={10}
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation={{ enabled: true, hideOnClick: true }}
-        effect="coverflow"
-        autoplay={{ delay: 5000 }}>
+        effect="coverflow">
         <ul>
           {featuredProjectsData.map((project) => (
             <SwiperSlide key={project.repository}>

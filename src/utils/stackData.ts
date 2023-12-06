@@ -6,6 +6,7 @@ import {
   SiAxios,
   SiReacthookform,
   SiReactrouter,
+  SiRedux,
 } from "react-icons/si";
 import { TbBrandDjango } from "react-icons/tb";
 import {
@@ -89,5 +90,9 @@ export const stackData = [
   {
     title: "React Router",
     img: SiReactrouter,
+  },
+  {
+    title: "Redux",
+    img: SiRedux,
   },
 ];

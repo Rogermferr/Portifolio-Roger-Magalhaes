@@ -30,6 +30,8 @@ export const ProjectModalStyle = styled.div`
       var(--color-gray)
     );
 
+    text-align: center;
+
     padding: 16px;
     border-radius: 20px;
 

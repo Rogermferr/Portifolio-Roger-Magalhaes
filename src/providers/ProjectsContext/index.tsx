@@ -5,6 +5,7 @@ import {
   IProjectsProviderProps,
 } from "./interfaces";
 import { api } from "../../services/api";
+import { useLocation } from "react-router-dom";
 
 export const ProjectsContext = createContext({} as IProjectsContext);
 
@@ -20,11 +21,15 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
   useEffect(() => {
     const getProjects = async () => {
       try {
-        const response = await api.get(
+        const { data } = await api.get<IProject[]>(
           "/Rogermferr/repos?sort=created&direction=desc"
         );
 
-        const listProjects = response.data;
+        const listProjects = data.filter(
+          (project) =>
+            project.name !== "Rogermferr" &&
+            project.name !== "Portifolio-Roger-Magalhaes"
+        );
 
         setProjects(listProjects);
       } catch (error) {
@@ -51,6 +56,12 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
       setSwitchedTheme("dark");
     }
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <ProjectsContext.Provider

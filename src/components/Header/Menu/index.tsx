@@ -1,13 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import { MenuStyle } from "./style";
 import { MenuProps } from "../interfaces";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ProjectsContext } from "../../../providers/ProjectsContext";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
-const Menu = ({ isActive, menuRef }: MenuProps) => {
+const Menu = ({ isActive, menuRef, setIsActive }: MenuProps) => {
   const location = useLocation();
   const { pathname } = location;
+
+  useEffect(() => {
+    setIsActive(false);
+  }, [pathname]);
 
   const { switchTheme, switchedTheme } = useContext(ProjectsContext);
   return (
@@ -24,7 +28,11 @@ const Menu = ({ isActive, menuRef }: MenuProps) => {
         Projetos
       </Link>
 
-      <button onClick={switchTheme}>
+      <button
+        onClick={switchTheme}
+        title={
+          switchedTheme === "dark" ? "Ativar Modo Claro" : "Ativar Modo Escuro"
+        }>
         {switchedTheme === "light" ? (
           <BsFillMoonStarsFill size={30} />
         ) : (

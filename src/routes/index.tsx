@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import ContactPage from "../pages/ContactPage";
 import ProjectsPage from "../pages/ProjectsPage";
 import { AnimatePresence } from "framer-motion";
-import Contact from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Routers = () => {
   return (
@@ -16,7 +16,7 @@ const Routers = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
-        <Contact />
+        <Footer />
       </>
     </AnimatePresence>
   );

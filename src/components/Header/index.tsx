@@ -19,7 +19,7 @@ const Header = () => {
         {isActive ? <AiOutlineClose size={25} /> : <FaBars size={25} />}
       </span>
 
-      <Menu isActive={isActive} menuRef={menuRef} />
+      <Menu isActive={isActive} menuRef={menuRef} setIsActive={setIsActive} />
       <HeaderMenuBackground isActive={isActive} />
     </HeaderStyle>
   );
