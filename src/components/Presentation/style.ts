@@ -52,10 +52,13 @@ export const PresentationStyle = styled.div`
   h1 {
     font-size: 3rem;
     font-weight: bold;
+
   }
 
   p {
     font-size: 1rem;
+    line-height: 150%;
+
   }
 
   div {

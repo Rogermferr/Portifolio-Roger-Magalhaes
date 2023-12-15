@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <HeaderStyle>
-      <h1>Roger Magalhães</h1>
+      <h1>Portifólio Pessoal</h1>
       <span onClick={() => setIsActive(!isActive)}>
         {isActive ? <AiOutlineClose size={25} /> : <FaBars size={25} />}
       </span>
