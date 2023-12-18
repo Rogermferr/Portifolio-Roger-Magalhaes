@@ -9,6 +9,8 @@ export const StackCardStyle = styled.li`
 
   padding: 16px;
 
+  transition: 0.5s;
+
   p {
     opacity: 0;
     transition: all 0.5s;
@@ -26,6 +28,9 @@ export const StackCardStyle = styled.li`
   }
 
   :hover {
+
+    color: var(--color-red);
+
     p {
       opacity: 1;
       transform: scale(1);

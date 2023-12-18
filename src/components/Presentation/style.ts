@@ -72,16 +72,12 @@ export const PresentationStyle = styled.div`
       text-align: center;
     }
 
-    a:hover {
-      transform: scale(1.2);
-    }
-
     a:nth-child(1) {
-      color: #f5f5f5;
       padding: 16px;
       background-color: var(--color-red);
       border-radius: 20px;
       font-weight: bold;
+      border: solid 1px transparent;
     }
 
     a:nth-child(2),
@@ -90,6 +86,18 @@ export const PresentationStyle = styled.div`
       border: solid 1px var(--color-white);
       border-radius: 20px;
       font-weight: bold;
+    }
+
+    a:nth-child(4){
+      border-radius: 50%;
+      border: solid 1px transparent;
+    }
+
+    a:hover {
+      background-color: var(--color-red);
+      box-shadow: inset 0 0 10px 0 var(--color-red),
+          0 0 20px 0 var(--color-red), 0 0 30px 0 var(--color-red);
+      border: solid 1px transparent;
     }
   }
 
