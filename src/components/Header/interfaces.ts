@@ -8,6 +8,6 @@ export interface MenuProps {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-// export interface HeaderMenuBackgroundProps {
-//   isActive: boolean
-// }
+export interface HeaderMenuBackgroundProps {
+  isActive: boolean
+}

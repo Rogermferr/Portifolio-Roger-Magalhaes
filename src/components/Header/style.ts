@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { HeaderMenuBackgroundProps } from "./interfaces";
+import styled from 'styled-components'
+import { HeaderMenuBackgroundProps } from './interfaces'
 
 export const HeaderStyle = styled.header`
   display: flex;
@@ -47,7 +47,7 @@ export const HeaderStyle = styled.header`
       cursor: pointer;
     }
   }
-`;
+`
 
 export const HeaderMenuBackground = styled.div<HeaderMenuBackgroundProps>`
   display: none;
@@ -62,6 +62,6 @@ export const HeaderMenuBackground = styled.div<HeaderMenuBackgroundProps>`
     top: 70px;
     left: 0;
 
-    display: ${(props) => (props.isActive ? "block" : "none")};
+    display: ${(props) => (props.isActive ? 'block' : 'none')};
   }
-`;
+`
