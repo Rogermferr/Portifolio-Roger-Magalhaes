@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContactStyle = styled.section`
   display: flex;
@@ -25,9 +25,9 @@ export const ContactStyle = styled.section`
       }
 
       a {
-        color: var(--color-red);
+        color: var(--color-gray-two);
         font-weight: bold;
       }
     }
   }
-`;
+`

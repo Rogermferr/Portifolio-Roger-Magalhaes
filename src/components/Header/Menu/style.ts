@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { HeaderStyleProps } from "./../interfaces";
+import styled from 'styled-components'
+import { HeaderStyleProps } from './../interfaces'
 
 export const MenuStyle = styled.nav<HeaderStyleProps>`
   display: flex;
@@ -22,32 +22,21 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
     padding: 8px;
     width: 100%;
 
-    &.home_link {
-      color: ${(props) =>
-        props.pathname === "/" ? "var(--color-red)" : "var(--color-white)"};
+    transition: all 0.5s;
 
-      border: ${(props) =>
-        props.pathname === "/" ? "solid 2px var(--color-red)" : "none"};
+    &.home_link:hover {
+      color: var(--color-red);
+      border: solid 2px var(--color-red);
     }
 
-    &.contact_link {
-      color: ${(props) =>
-        props.pathname === "/contact"
-          ? "var(--color-red)"
-          : "var(--color-white)"};
-
-      border: ${(props) =>
-        props.pathname === "/contact" ? "solid 2px var(--color-red)" : "none"};
+    &.contact_link:hover {
+      color: var(--color-red);
+      border: solid 2px var(--color-red);
     }
 
-    &.projects_link {
-      color: ${(props) =>
-        props.pathname === "/projects"
-          ? "var(--color-red)"
-          : "var(--color-white)"};
-
-      border: ${(props) =>
-        props.pathname === "/projects" ? "solid 2px var(--color-red)" : "none"};
+    &.projects_link:hover {
+      color: var(--color-red);
+      border: solid 2px var(--color-red);
     }
   }
   button {
@@ -81,7 +70,7 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
 
     border-radius: 8px;
 
-    transform: scaleY(${(props) => (props.isActive ? "1" : "0")});
+    transform: scaleY(${(props) => (props.isActive ? '1' : '0')});
     transform-origin: top;
     transition: transform 0.5s cubic-bezier(0.64, 0.02, 0.41, 1.25);
 
@@ -89,4 +78,4 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
       max-width: 50%;
     }
   }
-`;
+`

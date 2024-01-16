@@ -5,7 +5,7 @@ import {
   IProjectsProviderProps,
 } from "./interfaces";
 import { api } from "../../services/api";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 export const ProjectsContext = createContext({} as IProjectsContext);
 
@@ -57,11 +57,11 @@ export const ProjectsProvider = ({ children }: IProjectsProviderProps) => {
     }
   };
 
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
 
   return (
     <ProjectsContext.Provider

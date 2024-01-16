@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalReset = createGlobalStyle`
     /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -25,6 +25,10 @@ export const GlobalReset = createGlobalStyle`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 
     /* HTML5 display-role reset for older browsers */
@@ -96,4 +100,14 @@ export const GlobalReset = createGlobalStyle`
         max-width: 1200px;
         margin: 0 auto;
     }
-`;
+
+    .container-contact{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        background: #333333;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, var(--color-red), var(--color-black));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, var(--color-red), var(--color-black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+`

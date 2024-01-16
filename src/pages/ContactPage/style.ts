@@ -1,18 +1,21 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContactPageStyle = styled.div`
   color: var(--color-white);
-  margin: 250px 0;
+  padding: 150px 0;
+
+  width: 90%;
+  max-width: 1200px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 64px;
 
+  scroll-margin-top: 80px;
+
   @media (max-width: 900px) {
     flex-wrap: wrap;
     justify-content: center;
-
-    margin: 150px 16px;
   }
-`;
+`
