@@ -8,6 +8,9 @@ export const ContactPageStyle = styled.div`
   align-items: center;
   gap: 64px;
 
+  width: 90%;
+  margin: 0 auto;
+
   scroll-margin-top: 80px;
 
   @media (max-width: 900px) {

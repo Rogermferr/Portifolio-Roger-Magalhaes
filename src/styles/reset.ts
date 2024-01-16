@@ -105,9 +105,11 @@ export const GlobalReset = createGlobalStyle`
         display: flex;
         align-items:center;
         justify-content: center;
-        background: #333333;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, var(--color-red), var(--color-black));  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, var(--color-red), var(--color-black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        background: #333333;
+        background: -webkit-linear-gradient(to right, var(--color-black), var(--color-red));
+        background: linear-gradient(to right, var(--color-black), var(--color-red));
 
     }
 `

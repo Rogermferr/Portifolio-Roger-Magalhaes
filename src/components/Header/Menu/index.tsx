@@ -1,22 +1,18 @@
-import { useLocation } from 'react-router-dom'
 import { MenuStyle } from './style'
 import { MenuProps } from '../interfaces'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import { ProjectsContext } from '../../../providers/ProjectsContext'
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
 
 const Menu = ({ isActive, menuRef, setIsActive }: MenuProps) => {
-  const location = useLocation()
-  const { hash } = location
-
-  useEffect(() => {
-    setIsActive(false)
-  }, [hash])
-
   const { switchTheme, switchedTheme } = useContext(ProjectsContext)
 
   return (
-    <MenuStyle isActive={isActive} ref={menuRef}>
+    <MenuStyle
+      isActive={isActive}
+      ref={menuRef}
+      onClick={() => setIsActive(false)}
+    >
       <a href="#home" className="home_link scroll-to-target">
         Início
       </a>
