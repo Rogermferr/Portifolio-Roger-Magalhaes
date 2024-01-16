@@ -3,10 +3,6 @@ import styled from 'styled-components'
 export const ContactPageStyle = styled.div`
   color: var(--color-white);
   padding: 150px 0;
-
-  width: 90%;
-  max-width: 1200px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;

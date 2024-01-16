@@ -10,18 +10,20 @@ const ContactPage = () => {
   })
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: -200 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 1 }}
-      className="container-contact"
-    >
-      <ContactPageStyle id="contact">
-        <ContactBanner />
-        <Contact />
-      </ContactPageStyle>
-    </motion.div>
+    <div className="container-contact">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: -200 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 1 }}
+        className="container"
+      >
+        <ContactPageStyle id="contact">
+          <ContactBanner />
+          <Contact />
+        </ContactPageStyle>
+      </motion.div>
+    </div>
   )
 }
 
