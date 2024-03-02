@@ -107,7 +107,7 @@ export const GlobalReset = createGlobalStyle`
         justify-content: center;
 
 
-        background: #333333;
+        background: var(--color-black);
         background: -webkit-linear-gradient(to right, var(--color-black), var(--color-red));
         background: linear-gradient(to right, var(--color-black), var(--color-red));
 

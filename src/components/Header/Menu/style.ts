@@ -43,6 +43,12 @@ export const MenuStyle = styled.nav<HeaderStyleProps>`
     color: var(--color-white);
     background: transparent;
     border: none;
+    transition: all 0.5s;
+
+    :hover {
+      color: var(--color-red);
+      transform: scale(1.2);
+    }
   }
 
   @media (max-width: 900px) {

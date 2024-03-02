@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProjectModalStyle = styled.div`
   display: flex;
@@ -49,13 +49,17 @@ export const ProjectModalStyle = styled.div`
       }
 
       button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         height: 30px;
         width: 30px;
 
         background-color: transparent;
         border: var(--color-white) solid 1px;
         border-radius: 50%;
-        padding: 4px 8px;
+
         color: var(--color-white);
 
         transition: all 0.5s;
@@ -112,4 +116,4 @@ export const ProjectModalStyle = styled.div`
       width: 90%;
     }
   }
-`;
+`

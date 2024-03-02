@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContactBannerStyle = styled.section`
   width: 50%;
@@ -16,4 +16,4 @@ export const ContactBannerStyle = styled.section`
       font-size: 2.5rem;
     }
   }
-`;
+`

@@ -25,8 +25,19 @@ export const ContactStyle = styled.section`
       }
 
       a {
-        color: var(--color-gray-two);
+        color: var(--color-white);
         font-weight: bold;
+
+        transition: all 0.5s;
+
+        width: max-content;
+
+        :hover {
+          color: var(--color-red);
+
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+            1px 1px 0 #000;
+        }
       }
     }
   }
